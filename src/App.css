@@ -1,0 +1,11 @@
+.darkmode {
+  background-color: #000;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.lightmode {
+  background-color: white;
+  color: black;
+  transition: all 0.3s ease;
+}

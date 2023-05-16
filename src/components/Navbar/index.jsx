@@ -1,29 +1,15 @@
-import { useState } from 'react';
-import '../../index.css'
-import { Container, Nav, NavbarBrand } from 'react-bootstrap'
-import MoonIcon from '../../assets/images/moon-icon-retina.svg'
-import SunIcon from '../../assets/images/sun-icon-retina.svg'
-import BBDLogo from '../../assets/images/BBD.png';
+import React from 'react'
+import DarkMode from '../DarkMode'
 
-const Navbar = () => {
-
-  const [lightMode, setLightMode] = useState(false);
-  const [imageSrc, setImageSrc] = useState(SunIcon);
-
-  const switchModes = () => {
-    setLightMode(prevMode => !prevMode);
-    lightMode ? setImageSrc(SunIcon) : setImageSrc(MoonIcon);
-  };
-
+const Navbar = ({darkMode, setDarkMode}) => {
   return (
-    <div className={lightMode ? "light-mode" : "dark-mode"}>
-      <img
-        className=""
-        onClick={switchModes}
-        src={imageSrc}
-        alt="lightning-bolt"
-        height="30px"
-      />
+    <div className="row">
+      <div className="col">
+        <h3>This is the Navbar component</h3>
+      </div>
+      <div className="col">
+        <DarkMode darkMode={darkMode} setDarkMode={setDarkMode} />
+      </div>
     </div>
   )
 }

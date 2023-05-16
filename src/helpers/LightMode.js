@@ -1,18 +1,17 @@
 import { useState } from 'react';
-import '../../index.css'
 import { Container, Nav, NavbarBrand } from 'react-bootstrap'
-import MoonIcon from '../../assets/images/moon-icon-retina.svg'
-import SunIcon from '../../assets/images/sun-icon-retina.svg'
-import BBDLogo from '../../assets/images/BBD.png';
+import MoonIcon from '../assets/images/moon-icon-retina.svg'
+import SunIcon from '../assets/images/sun-icon-retina.svg'
+import BBDLogo from '../assets/images/BBD.png';
 
-const Navbar = () => {
+const LightMode = () => {
 
   const [lightMode, setLightMode] = useState(false);
   const [imageSrc, setImageSrc] = useState(SunIcon);
 
   const switchModes = () => {
     setLightMode(prevMode => !prevMode);
-    setImageSrc(MoonIcon);
+    lightMode ? setImageSrc(SunIcon) : setImageSrc(MoonIcon);
   };
 
   return (
@@ -28,4 +27,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default LightMode;

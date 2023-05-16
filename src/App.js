@@ -1,9 +1,15 @@
-import Homepage from "./views/Homepage";
+import { useState } from 'react';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import './App.css';
 
-function App() {
+const App = () => {
+  const [darkMode, setDarkMode] = useState(true);
+
   return (
-    <div className="App">
-      <Homepage />
+    <div className={darkMode ? "darkmode" : "lightmode"}>
+      <Navbar darkMode={darkMode} setDarkMode={setDarkMode}/>
+      <Hero />
     </div>
   );
 }
