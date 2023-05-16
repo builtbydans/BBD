@@ -1,14 +1,18 @@
 import React from 'react'
-import DarkMode from '../DarkMode'
+import '../Navbar/styles.scss'
+import DarkMode from '../utils/DarkMode'
+import BBDLogo from '../../assets/images/BBD.png';
 
 const Navbar = ({darkMode, setDarkMode}) => {
   return (
-    <div className="row">
-      <div className="col">
-        <h3>This is the Navbar component</h3>
-      </div>
-      <div className="col">
-        <DarkMode darkMode={darkMode} setDarkMode={setDarkMode} />
+    <div className="container">
+      <div className="row mb-5 pt-4">
+        <div className="col-6">
+          <img className="bbd-logo" src={BBDLogo} alt="BBD-Logo"/>
+        </div>
+        <div className="col-6 d-flex justify-content-end">
+          <DarkMode darkMode={darkMode} setDarkMode={setDarkMode} />
+        </div>
       </div>
     </div>
   )

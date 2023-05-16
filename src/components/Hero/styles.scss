@@ -1,0 +1,27 @@
+$breakpoint-large: 992px;
+
+.typical {
+  height: 450px;
+}
+
+.typical-title {
+  font-size: 180px;
+  font-weight: 600;
+  line-height: 80%;
+  letter-spacing: -0.06em;
+}
+
+hr {
+  border: 1px solid rgb(112, 112, 112);
+  width: 70px;
+  margin: 50px 0px 50px 0px;
+}
+
+@media (max-width: $breakpoint-large) {
+  .typical-title {
+      font-size: 90px;
+  }
+  .typical {
+      height: 300px;
+  }
+}

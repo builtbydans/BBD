@@ -1,11 +1,11 @@
 .darkmode {
-  background-color: #000;
-  color: white;
+  background-color: #0e0e0e;
+  color: rgb(241, 241, 241);
   transition: all 0.3s ease;
 }
 
 .lightmode {
-  background-color: white;
-  color: black;
+  background-color: rgb(241, 241, 241);
+  color: #0e0e0e;
   transition: all 0.3s ease;
 }

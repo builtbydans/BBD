@@ -4,14 +4,15 @@ import '../Hero/styles.scss';
 
 const Hero = () => {
   return (
-    <div className="">
-        <div className="">
+    <div className="container">
+        <div className="typical">
             <Typical
-            className=""
+            className="typical-title"
             wrapper="h1"
             steps={["Software developer and web designer "]}
         />
         </div>
+        <hr/>
     </div>
   )
 }

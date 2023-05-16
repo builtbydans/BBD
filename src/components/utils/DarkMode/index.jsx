@@ -1,6 +1,6 @@
 import './styles.scss'
-import MoonIcon from '../../assets/images/moon-icon-retina.svg'
-import SunIcon from '../../assets/images/sun-icon-retina.svg'
+import MoonIcon from '../../../assets/images/moon-icon-retina.svg'
+import SunIcon from '../../../assets/images/sun-icon-retina.svg'
 
 const DarkMode = ({darkMode, setDarkMode}) => {
 
@@ -12,7 +12,7 @@ const DarkMode = ({darkMode, setDarkMode}) => {
     <>
       <button>
         <img
-          className=""
+          className="mode-switch"
           onClick={switchModes}
           src={darkMode ? SunIcon : MoonIcon}
           alt="lightning-bolt"
